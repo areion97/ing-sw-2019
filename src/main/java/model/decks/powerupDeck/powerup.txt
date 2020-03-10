@@ -1,0 +1,13 @@
+Powerup Name | AmmoColor | Quantity
+Newton RED 2
+Newton YELLOW 2
+Newton BLUE 2
+TagbackGrenade RED 2
+TagbackGrenade YELLOW 2
+TagbackGrenade BLUE 2
+TargetingScope RED 2
+TargetingScope YELLOW 2
+TargetingScope BLUE 2
+Teleporter RED 2
+Teleporter YELLOW 2
+Teleporter BLUE 2

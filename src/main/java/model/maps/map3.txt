@@ -1,0 +1,13 @@
+Roomcolor | PlayerSpawn? | Up | Down | Left | Right
+BLUE 0 2 1 2 0
+BLUE 0 2 2 0 0
+BLUE 1 2 1 0 1
+GREEN 0 2 1 1 2
+RED 1 1 2 2 0
+RED 0 2 1 0 2
+YELLOW 0 1 0 2 0
+YELLOW 0 1 0 0 2
+null
+WHITE 0 1 2 2 1
+YELLOW 0 0 2 1 0
+YELLOW 1 0 2 0 2

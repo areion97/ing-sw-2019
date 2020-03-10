@@ -1,0 +1,22 @@
+name     base cost   |  additional cost   |   optionalcost    |  alternative cost ( 1 if there is alternative mode but no ammo needed to shoot, color if u have to pay)
+Cyberblade YELLOW|RED|YELLOW|
+GrenadeLauncher RED| |RED|
+Heatseeker RED|RED YELLOW| |
+LockRifle BLUE|BLUE|RED|
+MachineGun BLUE|RED|YELLOW BLUE|
+PlasmaGun BLUE|YELLOW|BLUE|
+RocketLauncher RED|RED|BLUE YELLOW|
+Thor BLUE|RED|BLUE BLUE|
+Whisper BLUE|BLUE YELLOW| |
+Electroscythe BLUE| | |BLUE RED
+Furnace RED|BLUE| |
+Hellion RED|YELLOW| |RED
+PowerGlove YELLOW|BLUE| |BLUE
+Railgun YELLOW|YELLOW BLUE| |
+Shockwave YELLOW| | |YELLOW
+Shotgun YELLOW|YELLOW| |
+SledgeHammer YELLOW| | |RED
+Zx2 YELLOW|RED| |
+FlameThrower RED| | |YELLOW
+VortexCannon RED|BLUE|RED|
+TractorBeam BLUE| | |RED YELLOW
