@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 
-
-
 public class WeaponDeck extends DeckManager {
     private LinkedList<Weapon> deck;
 
@@ -120,13 +118,10 @@ public class WeaponDeck extends DeckManager {
             }
             Collections.shuffle(deck.subList(0,8));
             readWeaponFile.close();
-
-
         }
         catch (IOException e) {
             System.err.println(e);
         }
-
     }
 
     public ArrayList<AmmoColors> setArrays(String string) {
@@ -164,7 +159,7 @@ public class WeaponDeck extends DeckManager {
            setDeckSize(deck.size());
        }
 
-        return weapon;
+       return weapon;
     }
 
 

@@ -54,12 +54,7 @@ public class ShootAtPrefixedDistance implements ShootAtPrefixedDistanceInterface
                 if(!DistanceManager.canSee1(shootingPlayer,p))
                     playersYouCanSee.remove(p);
             }
-
         }
-
-
-
-
 
         if (seeMode) {
             if (!ShootController.canSeeSomeone(shootingPlayer, seeMode, false, Game.getPlayersAlive())) {
@@ -81,7 +76,6 @@ public class ShootAtPrefixedDistance implements ShootAtPrefixedDistanceInterface
             }
         }
         else {
-
             if (fromStep == toStep) {
                 if (!DistanceManager.reachInExactSteps(shootingPlayer, fromStep, Game.getPlayersAlive())) {
                     out.println("noPlayersReachable");
@@ -207,7 +201,6 @@ public class ShootAtPrefixedDistance implements ShootAtPrefixedDistanceInterface
      * 2nd check: player has to be visible.
      **/
 
-
     private Player inputAndCheckPlayer(PrintWriter out, Scanner in, int fromStep, int toStep, boolean seeMode, Player shootingPlayer, ArrayList<Player> players)  {
 
         int shootedPlayerId = 0;
@@ -224,9 +217,7 @@ public class ShootAtPrefixedDistance implements ShootAtPrefixedDistanceInterface
                 if (shootedPlayerId < Game.getPlayerArrayList().size() && shootedPlayerId >= 0 && shootedPlayerId != shootingPlayer.getPlayerID()) {
                     shootedPlayer = Game.getPlayerArrayList().get(shootedPlayerId);
 
-
                     if (!players.contains(shootedPlayer)) {
-
                         out.println("playerDeadOrShot");
                         out.flush();
 

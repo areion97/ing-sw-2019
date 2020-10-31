@@ -19,8 +19,6 @@ public class  Whisper extends Weapon {
     @Override
     public void shootWithBasicAttack(PrintWriter out, Scanner in, Player shootingPlayer) {
         basicEffect.shoot(out,in,this,shootingPlayer,1, 0,2,true,3,1,"",0);
-
-
     }
 
 

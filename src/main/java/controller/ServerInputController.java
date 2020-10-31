@@ -40,17 +40,14 @@ public class ServerInputController {
         if (player.getServerMessage().getObject().equals(object)) {
 
             try {
-
                 numericalInput = Integer.parseInt(player.getServerMessage().getValue());
                 if (numericalInput < minInputRange || numericalInput > maxInputRange) {
-
                     out.println("outOfRange");
                     out.flush();
                 } else {
                     out.println("okInput");
                     out.flush();
                     return numericalInput;
-
                 }
 
             } catch (NumberFormatException e) {
@@ -58,7 +55,7 @@ public class ServerInputController {
                 out.flush();
             }
         }
-        else{
+        else {
             out.println("reinsert");
             out.flush();
         }
@@ -84,9 +81,7 @@ public class ServerInputController {
                         out.flush();
                         i = Game.getPlayerArrayList().size();
                     }
-
                     else {
-
                         if (i == Game.getPlayerArrayList().size() - 1) {
                             player.setUsername(username);
                             out.println("okInput");
@@ -118,11 +113,7 @@ public class ServerInputController {
 
             if (shootingPlayer.getServerMessage().getObject().equals(object)) {
 
-
                 Square toSquare = shootingPlayer.getServerMessage().getToSquare();
-
-
-
 
                 if (fromStep == toStep) {
                     if (DistanceManager.reachableInSteps(shootedPlayer.getSquare(), toSquare, toStep)) {
@@ -135,14 +126,12 @@ public class ServerInputController {
                     }
                 } else {
 
-
                     if(!DistanceManager.canSee2(shootingPlayer.getSquare(),toSquare)) {
                         out.println("cannotSeeToSquare");
                         out.flush();
                         return moveShootedPlayerValidate(out, in, shootingPlayer,shootedPlayer, fromStep,toStep, object);
 
                     }
-
                     else if (DistanceManager.reachableInLessSteps(shootedPlayer.getSquare(),toSquare,fromStep,toStep )) {
 
                         shootedPlayer.setSquare(toSquare);
@@ -158,12 +147,10 @@ public class ServerInputController {
 
             }
             else {
-
                 out.println("reinsert");
                 out.flush();
             }
         } else {
-
             out.println("reinsert");
             out.flush();
         }
@@ -185,14 +172,12 @@ public class ServerInputController {
                     out.println("outOfRange");
                     out.flush();
                 }
-
                 else if (Game.getColorsAvailable().get(colorIndex).equals(PlayerColors.X)) {
                     out.println("colorAlreadyTaken");
                     out.flush();
                     ModelViewColors.showColors(in, out);
 
                 }
-
                 else {
                     player.setColor(Game.getColorsAvailable().get(colorIndex));
                     Game.getColorsAvailable().set(colorIndex,PlayerColors.X);
@@ -202,7 +187,6 @@ public class ServerInputController {
                 }
 
             } catch (NumberFormatException e) {
-
                 out.println("reinsert");
                 out.flush();
             }
@@ -227,11 +211,11 @@ public class ServerInputController {
 
                 return toSquare;
 
-            }
-            else {
+            } else {
                 out.println("reinsert");
                 out.flush();
             }
+
         } else {
             out.println("reinsert");
             out.flush();

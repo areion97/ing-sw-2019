@@ -37,6 +37,7 @@ public abstract class  Weapon {
     public void setLoaded(boolean loaded) {
         this.loaded = loaded;
     }
+
     public boolean getLoaded() {
         return loaded;
     }
@@ -71,10 +72,8 @@ public abstract class  Weapon {
         return basicAttackName;
     }
 
-
     public String getMove() {
         return "";
     }
-
 
 }

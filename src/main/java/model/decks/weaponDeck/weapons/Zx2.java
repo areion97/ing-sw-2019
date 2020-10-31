@@ -15,11 +15,9 @@ public class Zx2 extends Weapon {
         basicEffect= new ShootVisibleOrNot();
     }
 
-
     @Override
     public void shootWithBasicAttack(PrintWriter out, Scanner in, Player shootingPlayer) {
         basicEffect.shoot(out,in,this,true,shootingPlayer,this.getNumberOfTargets(), 1, 2,"",0);
     }
-
 }
 

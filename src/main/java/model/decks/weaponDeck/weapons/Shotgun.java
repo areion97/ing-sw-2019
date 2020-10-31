@@ -18,12 +18,10 @@ public class Shotgun extends Weapon {
 
     }
 
-
     @Override
     public void shootWithBasicAttack(PrintWriter out, Scanner in, Player shootingPlayer) {
         basicEffect.shoot(out,in,this,shootingPlayer,this.getNumberOfTargets(), 0,0, false,3,0,move,1);
     }
-
 
     @Override
     public String getMove() {

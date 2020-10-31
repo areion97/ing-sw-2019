@@ -62,12 +62,9 @@ public class GrabWeaponController {
 
                 else {
                     player.setAmmos(red,yellow,blue);
-
                 }
 
-
                 player.getSquare().getWeapons().remove(weaponIndex);
-
 
                 if (player.getWeapons().size() == 3) {
                     out.println("weaponFull");
@@ -76,7 +73,6 @@ public class GrabWeaponController {
                     ModelViewPlayerWeapons.showPlayerWeapons(player,out,in);
 
                     discardedWeaponIndex =ServerInputController.inputAndCheckInteger(0,player.getWeapons().size(),out,in,player,"swapWeapon");
-
 
                     weaponDiscarded = player.getWeapons().get(discardedWeaponIndex);
                     player.getWeapons().remove(discardedWeaponIndex);
@@ -104,9 +100,5 @@ public class GrabWeaponController {
                 reinsert=true;
 
         } while (reinsert);
-
     }
-
-
-
 }

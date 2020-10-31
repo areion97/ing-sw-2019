@@ -23,8 +23,6 @@ public class PowerGlove extends Weapon {
         basicEffect.shoot(out,in,this,shootingPlayer,this.getNumberOfTargets(),1,1,false,1,2,move,0);
     }
 
-
-
     @Override
     public String getMove() {
         return move;

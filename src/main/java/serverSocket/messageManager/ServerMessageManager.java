@@ -32,10 +32,9 @@ public class ServerMessageManager {
         int secondComma = string.indexOf(',', firstComma + 1);
 
         String x = string.substring(0,firstComma);
-        String y =string.substring(firstComma+1,secondComma);
+        String y = string.substring(firstComma+1,secondComma);
 
         object = string.substring(secondComma + 1);
-
 
         try {
             int xInt = Integer.parseInt(x);
@@ -43,15 +42,13 @@ public class ServerMessageManager {
 
             toSquare = Game.getMap().getSquare(xInt, yInt);
 
-
             if (toSquare != null) {
                 return true;
 
             } else {
-
                 return false;
             }
-        }catch(Exception e) {
+        } catch(Exception e) {
             return false;
         }
 

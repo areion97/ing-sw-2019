@@ -15,12 +15,9 @@ public class ModelViewAmmo {
         if (line.equals("viewAmmo")) {
             for (int i = 0; i < AmmoColors.values().length; i++) {
                 out.println(AmmoColors.values()[i].toString() + ": " + player.getAmmoRYB()[i]);
-
             }
-
             out.println("exit");
             out.flush();
-
         }
     }
 }

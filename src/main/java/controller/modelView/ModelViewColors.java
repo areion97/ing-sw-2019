@@ -20,7 +20,6 @@ public class ModelViewColors {
                     out.println(i + ") " + colors.get(i));
                     out.flush();
                 }
-
             }
             out.println("exit");
             out.flush();

@@ -25,9 +25,6 @@ public class MoveController {
             ServerInputController.moveShootedPlayerValidate(out, in, shootingPlayer,shootedPlayer, distance,distance, "coordinates");
 
         }
-
     }
-
-
 }
 

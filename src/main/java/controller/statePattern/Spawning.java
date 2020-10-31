@@ -22,7 +22,6 @@ public class Spawning implements PlayerState {
 
         int input = ServerInputController.inputAndCheckInteger(0, 1, out, in, player, "chooseSpawningPowerup");
 
-
         if(player.getPowerups().size()==3) {
             out.println("fullOfPowerups");
             out.flush();
@@ -30,13 +29,8 @@ public class Spawning implements PlayerState {
             ModelViewPlayerPowerups.showPlayerPowerups(in,out,player);
             int powerupIndex= ServerInputController.inputAndCheckInteger(0,2,out,in,player,"discardPowerup");
 
-
             Game.getPowerupDeck().discardPowerup(player.getPowerups().get(powerupIndex));
             player.getPowerups().remove(powerupIndex);
-
-
-
-
         }
 
         else if(!player.getAlive()) {
@@ -44,13 +38,10 @@ public class Spawning implements PlayerState {
             out.flush();
         }
 
-
         if (input == 0) {
             player.getPowerups().add(powerup1);
             Game.getPowerupDeck().discardPowerup(powerup2);
             player.setSpawningColor(powerup1.getAmmoColor());
-
-
 
         } else if (input == 1) {
             player.getPowerups().add(powerup2);

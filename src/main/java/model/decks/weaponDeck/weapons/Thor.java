@@ -15,7 +15,6 @@ public class Thor extends Weapon {
         basicEffect=new ShootVisibleOrNot();
     }
 
-
     @Override
     public void shootWithBasicAttack(PrintWriter out, Scanner in, Player shootingPlayer) {
         basicEffect.shoot(out,in,this,true,shootingPlayer,this.getNumberOfTargets(), 2, 0,"",0);

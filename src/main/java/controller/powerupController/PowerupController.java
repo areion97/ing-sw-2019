@@ -34,12 +34,10 @@ public class PowerupController {
                     Game.getPowerupDeck().discardPowerup(p);
                     player.getPowerups().remove(i);
                     return;
-
                 }
                 else
                     return;
             }
-
         }
 
         out.println("noTeleporter");
@@ -82,15 +80,10 @@ public class PowerupController {
                         out.flush();
 
                     } while (true);
-
-
                 }
                 else
                     return;
             }
-
-
-
         }
         out.println("noNewton");
         out.flush();
@@ -109,7 +102,6 @@ public class PowerupController {
 
         line = in.nextLine();
 
-
         shootingPlayer.getServerMessage().deserialize(line);
 
         if (shootingPlayer.getServerMessage().getObject().equals("playerToMove")) {
@@ -117,7 +109,6 @@ public class PowerupController {
                 shootedPlayerId = Integer.parseInt(shootingPlayer.getServerMessage().getValue());
                 if (shootedPlayerId < Game.getPlayerArrayList().size() && shootedPlayerId >= 0 && shootedPlayerId != shootingPlayer.getPlayerID()) {
                     shootedPlayer = Game.getPlayerArrayList().get(shootedPlayerId);
-
 
                     if (!playersAlive.contains(shootedPlayer)) {
                         out.println("playerDeadOrShot");
@@ -133,7 +124,7 @@ public class PowerupController {
                     out.println("reinsert");
                     out.flush();
                 }
-            }catch (NumberFormatException e) {
+            } catch (NumberFormatException e) {
                 out.println("reinsert");
                 out.flush();
             }

@@ -59,7 +59,6 @@ public class Shoot implements PlayerState {
 
         weapon.shootWithBasicAttack(out,in,shootingPlayer);
 
-
         }
 
     }

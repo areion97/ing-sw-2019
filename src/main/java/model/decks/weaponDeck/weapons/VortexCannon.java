@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class VortexCannon extends Weapon {
 
-
     private String move = "moveTractorBeam";
 
     public VortexCannon(String weaponName, AmmoColors baseCost, ArrayList<AmmoColors> additionalCost, ArrayList<AmmoColors> optionalCost, ArrayList<AmmoColors> alternativeCost, int numberOfTargets) {
