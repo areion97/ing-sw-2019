@@ -118,13 +118,7 @@ public class EchoServerClientHandler implements Runnable {
                  Thread.sleep(1000);
              }
 
-
-
-
-
          } while(reinsert);
-
-
 
         } catch (IOException e) {
             System.err.println(e.getMessage());

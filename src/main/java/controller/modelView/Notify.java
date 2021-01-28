@@ -74,6 +74,9 @@ public class Notify {
                     out.println("Ranking: ");
 
                     sendRank(out);
+                    /**
+                     * TODO finire di implementare la fine del gioco con il messaggio : "Grazie per aver giocato"
+                     */
                 } else if (object.equals("endGame")) ; //mandi end game a tutti
 
                 else if (object.equals("NotifyWinningPlayer")) {

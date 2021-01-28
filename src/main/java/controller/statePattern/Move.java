@@ -67,7 +67,6 @@ public class Move implements PlayerState {
 
         else if(numberOfAction==2) {
 
-
             if (DistanceManager.reachableInLessSteps(player.getSquare(), toSquare, 0,1)) {
                 previousSquare=player.getSquare();
                 player.setSquare(toSquare);

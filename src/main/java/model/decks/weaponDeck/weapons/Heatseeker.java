@@ -22,8 +22,4 @@ public class Heatseeker extends Weapon {
         basicEffect.shoot(out, in, this,false, shootingPlayer, this.getNumberOfTargets(), 3, 0,"",0);
     }
 
-
-
-
-
 }

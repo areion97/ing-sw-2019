@@ -26,9 +26,8 @@ public class ClientConnect {
         this.ip = ip;
         this.port = port;
     }
-//192.168.43.25
     public static void main(String[] args) {
-        ClientConnect client = new ClientConnect("192.168.43.25", 8079);
+        ClientConnect client = new ClientConnect("192.168.1.9", 8079);
         try {
             client.startClient();
         } catch (IOException e) {

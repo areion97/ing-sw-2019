@@ -10,8 +10,8 @@ public class LaunchServer {
      * Launches Server and sets timer
      * @param args command line arguments, args[0] is the time in seconds to wait before starting the game
      */
-    public static void main(String[] args){
-        //timer=Integer.parseInt(args[0]);
+    public static void main(String[] args) {
+        timer=Integer.parseInt(args[0]);
         MultiEchoServer server = new MultiEchoServer(8079);
         server.startServer();
 

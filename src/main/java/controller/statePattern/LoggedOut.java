@@ -176,7 +176,8 @@ public class LoggedOut implements PlayerState {
 
 
             } while (!timerElapsed);
-        } else {
+        }
+        else {
             do {
                 if (timerElapsed) {
                     PrintWriter out = GameManager.getOut(player.getPlayerID());
